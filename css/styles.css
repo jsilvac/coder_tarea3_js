@@ -1,0 +1,37 @@
+h1 {
+    margin: 20px;
+    text-align: center;
+}
+
+.contenedor {
+
+    margin: 10px;
+    border: 1px solid black;
+}
+
+/* .btn{
+    margin: 15px;
+} */
+
+#atras{
+    position: relative;
+    left: -80%;
+}
+
+#buttonSuma{
+    background-color: green;
+    color: white;
+}
+
+#badge {
+    width: 8rem; 
+    display: 
+    inline-block;
+}
+
+footer p{
+    text-align:center
+}
+section {
+    margin: 10px;
+}
