@@ -205,3 +205,7 @@ function refresca(){
 
     agregaMontos(registro)
 }
+
+function refrescaPagina(){
+    location.reload();
+}
