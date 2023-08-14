@@ -18,7 +18,7 @@
         <section>
                 
             <!-- Button trigger modal -->
-         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalNombre">
+         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalNombre" id="cajero">
              Ingresa cajero
          </button>
          
@@ -38,7 +38,7 @@
                  </div>
                  <div class="modal-footer">
                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                     <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="igresaCajero()">Guardar</button>
+                     <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="guardarNombre" onclick="igresaCajero()">Guardar</button>
                  </div>
              </div>
              </div>
@@ -47,12 +47,13 @@
      </section>
         <section class="contenedor">
             <h4 id="nombre">Cajero/a:</h4>
-            <table class="table table-striped">
+            <table class="table table-striped " id="miTabla">
                 <thead>
                 <tr>
                     <th>ID</th>
                     <th>Tipo Pago</th>
                     <th>Monto</th>
+                    <th id="elim" >Eliminar</th>
                 </tr>
                 </thead>
                 <tbody id="tablabody">
@@ -61,7 +62,7 @@
             </table>
             
         </section>
-        <h4 id="total">Total a pagar $</h4>
+        <h4 id="total">Total Venta Caja $</h4>
         <section>
             <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
                 <div class="modal-dialog modal-dialog-centered">
@@ -128,24 +129,25 @@
                         </button>
                     </div>
                     
-                    <div id="badge" class="badge bg-primary text-wrap" ">
-                        0
+                    <div id="preSuma" >
+                        <p>$</p>
+                        <p id="badge">0</p>
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Aceptar</button>
+                    <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal" id="acepta">Aceptar</button>
                     <button class="btn btn-primary" id="atras" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Atrás</button>
                 </div>
                 </div>
             </div>
             </div>
               <!-- <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button" id="botonIngresaNuevo" onclick="focusInit()">Ingresar Nuevo Monto </a> -->
-            <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button" id="botonIngresaNuevo" onclick="focusInit()">Ingresar Nuevo Monto</a>
-            <input class="btn btn-warning" type="button" onclick="refrescaPagina()" value="Limpiar">
+            <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button" id="botonIngresaNuevo" >Ingresar Nuevo Monto</a>
+            <input class="btn btn-warning" type="button" id="limpiar" value="Limpiar">
         </section>
     </main>
     <footer>
-        <!-- <input class="btn btn-primary" type="button" onclick="ingresa()" value="Ingresar Nuevo"> -->
+
         
         <p>Código de Jaime Silva C</p>
     </footer>

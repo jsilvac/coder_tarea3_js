@@ -1,5 +1,6 @@
 h1 {
     margin: 20px;
+    padding-bottom: 10px;
     text-align: center;
 }
 
@@ -9,9 +10,9 @@ h1 {
     border: 1px solid black;
 }
 
-/* .btn{
-    margin: 15px;
-} */
+#elim{
+    width: 10%;
+}
 
 #atras{
     position: relative;
@@ -23,15 +24,28 @@ h1 {
     color: white;
 }
 
-#badge {
-    width: 8rem; 
-    display: 
-    inline-block;
+td .btnElim {
+    background-color: blue;
+    border-radius: 50%;
+    align-items: center;
+    text-align: center;
+
 }
 
-footer p{
-    text-align:center
+p{
+    display: inline;
+    font-size: 30px;
 }
+
 section {
-    margin: 10px;
+    margin: 15px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 10px 0;
 }
